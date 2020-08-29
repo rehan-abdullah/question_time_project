@@ -35,7 +35,11 @@ urlpatterns = [
     # Browser login
     path("accounts/", include("django.contrib.auth.urls")),
 
+    # Users app api urls
     path("api/", include("users.api.urls")),
+
+    # Questions app api urls
+    path("api/", include("questions.api.urls")),
 
     # Login via browsable API
     path("api-auth/", include("rest_framework.urls")),
