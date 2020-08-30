@@ -26,6 +26,7 @@ sqlparse = "==0.3.1"
 urllib3 = "==1.25.10"
 confusable_homoglyphs = "==3.2.0"
 Django = "==3.1"
+django-webpack-loader = "*"
 
 [requires]
 python_version = "3.8"
