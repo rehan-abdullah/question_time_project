@@ -8,8 +8,28 @@
 		      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 		      crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 		<style>
+				html, body {
+						height: 100%;
+            font-family: 'PT Serif', serif;
+				}
+
+				body {
+            background: rgb(34,193,195);
+            background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+				}
+
+				.auth-box {
+						border:3px solid grey;
+						border-radius: 10px;
+						padding-top: 25px;
+						padding-bottom: 25px;
+						width: 600px;
+						margin: auto;
+				}
+
 				.login-form-container {
 						width: 300px;
 						margin: auto;
@@ -19,13 +39,19 @@
 						width: 400px;
 						margin: auto;
 				}
+
+				.outer-area {
+						margin-top: 50px;
+				}
 		</style>
 	</head>
 	<body>
 
-		<div class="auth-box text-center">
-			{% block content %}
-			{% endblock %}
+		<div class="outer-area">
+			<div class="auth-box text-center">
+				{% block content %}
+				{% endblock %}
+			</div>
 		</div>
 
 	</body>
